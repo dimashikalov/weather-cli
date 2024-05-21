@@ -12,14 +12,5 @@
     "weather"
   ],
   "author": "Dima Shikalov",
-  "license": "ISC",
-  "homepage": "https://shikalov-weather.ru",
-  "repository": {
-    "type": "git",
-    "url": "https://shikalov-weather.ru"
-  },
-  "bugs": {
-    "url": "https://shikalov-weather.ru",
-    "email": "shokilla@mail.ru"
-  }
+  "license": "ISC"
 }
