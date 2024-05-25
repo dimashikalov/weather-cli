@@ -6,7 +6,19 @@ const printError = (error) => {
 };
 
 const printSuccess = (message) => {
-  console.log(chalk.bgGreen(' SUCCESS '), message);
+  console.log(`${chalk.bgGreen(' SUCCESS ')}: ${message}`);
+};
+
+const printWeather = (message, icon) => {
+  console.log(
+    dedent` ${chalk.bgYellow(' Погода ')}
+    Город: ${message.name}
+   ${icon}  ${message.weather[0].description.toUpperCase()}
+    Мин. температура: ${message.main.temp_min}
+    Макс. температура: ${message.main.temp_max}
+    Скорость ветра: ${message.wind.speed} м/с
+  `
+  );
 };
 
 const printHelp = () => {
@@ -20,4 +32,4 @@ const printHelp = () => {
   );
 };
 
-export { printError, printSuccess, printHelp };
+export { printError, printSuccess, printHelp, printWeather };
